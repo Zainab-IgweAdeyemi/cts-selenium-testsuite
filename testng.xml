@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "CafeTownSend" >
+    <test name="CafeTownSend">
+        <classes>
+            <class name="tests.loginTests"/>
+            <class name="tests.createEmployeeTests"/>
+            <class name="tests.editEmployeeTests"/>
+            <class name="tests.deleteEmployeeTests"/>
+            <class name="tests.logoutTests"/>
+        </classes>
+    </test>
+</suite>
