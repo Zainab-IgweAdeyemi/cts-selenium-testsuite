@@ -1,5 +1,5 @@
 # cts-selenium-testsuite
-Please View in raw format
+Please View in raw/blame format
 
 #### NOTE:
 1.	Assignment was done using a Mac PC. 
