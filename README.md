@@ -1,6 +1,7 @@
 # cts-selenium-testsuite
+Please View in raw format
 
-NOTE:
+#### NOTE:
 1.	Assignment was done using a Mac PC. 
 2.	File Directories/Path are written in macOS format.
 3.	Browser Drivers are for macOS.
@@ -17,7 +18,7 @@ to
 \\src\\main\\java\\config\\data.properties
 
 
-Pre-requisites:
+#### Pre-requisites:
 •	Java v8 JDK and/or higher versions.
   Verify if Java is installed on your machine by executing `javac` or `java –version` on your Terminal.
 •	IntelliJ
@@ -25,14 +26,14 @@ Pre-requisites:
   Verify if maven is installed using your terminal by running `mvn –v` OR  run `brew install maven` to install Maven on your machine, if not installed.
 •	Git
 
-Creating a local copy of my project
+#### Creating a local copy of my project
 1.	Navigate to this repository https://github.com/zayberry/cts-selenium-testsuite, click `Clone or Download` button to download the assignment as a project.
 2.	Copy Github URL displayed.
 3.	Launch terminal on macOS or command prompt on Windows PC.
 4.	Navigate to the folder where project is to be saved locally by typing this command `cd Desktop`, for example.
 5.	Create an actual local copy of the project by running “git clone `Github URL` ”, where URL is the link from Step 2 above.
 
-Launching Project
+#### Launching Project
 1.	Launch IntelliJ
 2.	Click File on the menu
 3.	Click Open
@@ -55,13 +56,13 @@ OR For example, if you have JDK v10,
 8.	Ensure all dependencies are downloaded successfully by clicking Maven Tool Windows on the top right of the IntelliJ IDE, click Refresh icon. 
 Note, If there is a pop-up to import dependencies, ensure to click `Enable auto-import` to automatically download all required dependencies for the project.
 
-Running Tests
+#### Running Tests
 To run tests, Expand Lifecycle on the Maven Tool Window and double click `test` 
   OR 
 Using your terminal, Navigate to the folder where project is saved locally by typing this command `cd Desktop\CafeTownSend`, run `mvn test –P testng` OR `mvn test` to execute all test suites.
 Note that, testng in `mvn test –P testng` refers to the exact name of the testng.xml file.
 
-View Test Reports
+#### View Test Reports
 After executing all tests, you can either view test result on the terminal where test was run OR using the IntelliJ’s console located at the bottom part of the IDE 
 OR
 1.	Navigate to project folder, select `target` folder
@@ -70,12 +71,14 @@ OR
 
 
 
-ABOUT TEST
-Test Approach – I created independent tests for each feature, as well as different test methods for each test cases.
+#### ABOUT TEST
+##### Test Approach
+I created independent tests for each feature, as well as different test methods for each test cases.
  
-Framework choice – I used Selenium Webdriver framework with Page Object Model written in Java, with TestNG and Maven.
+##### Framework choice
+I used Selenium Webdriver framework with Page Object Model written in Java, with TestNG and Maven.
 
-Tests covered – Login, Create, Edit, Delete and Log out
+##### Tests covered
 
 Automated Test Results - 
 Login suites: Passed,
@@ -86,7 +89,7 @@ Log out suites: Passed
 
 Manual Test Results are included in the Test Report excel sheet.
 
-Decisions I made and why I choose this solution 
+##### Decisions I made and why I choose this solution 
 I chose the Page Object Model for easy maintenance so that for cases when some elements are changed, one can easily change only a particular class that has the specific element, rather than having to change them on every line of test code where they have been used. 
 
 I also created every test method independently so that no method depends on any other to run. 
